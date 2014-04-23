@@ -1,0 +1,134 @@
+﻿/*
+    此页面定义【分类展示页面样式】
+    */
+
+body {position:relative;  font-size:12px;    font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+}
+html,body{width:100%;height:100%;}
+*{margin:0; padding:0; border:0; list-style:none;}
+a{text-decoration:none; cursor:pointer;  color:#666;}
+td{max-height:450px;
+    white-space:nowrap; 
+text-overflow:ellipsis; 
+-o-text-overflow:ellipsis; 
+overflow: hidden; }
+
+li a{
+    max-width:200px;
+  white-space:nowrap; 
+text-overflow:ellipsis; 
+-o-text-overflow:ellipsis; 
+overflow: hidden;
+}
+/*#region 导航菜单 */
+#guide {
+        width: 100%;
+        height: 48px;
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: 7;
+        background: url(../images/guide.png) top center repeat;
+        text-align:center;
+    }
+.guide_menu{width:980px; height:48px;display:inline-block; position:relative;
+}
+.guide_ul{height:48px; width:840px; text-align:center; margin:0 auto;}
+.guide_ul li{float:left; display:inline-block;}
+.guide_ul li a{width: auto;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0 16px;
+    text-align: left;
+    color: #666 !important;
+    float: left;
+    font-size: 15px;
+    border-right: 1px solid #ddd;}
+.guide_ul li a:hover{background-color:#eee;}
+
+
+/*#endregion */
+
+#top_menu{width:100%; height:auto; position:absolute; top:48px; left:0;}
+.menu_div{margin:0 auto; width:950px; height:80px; padding:5px 5px; position:relative;}
+
+/*#region 主体 */
+.main{width:960px; height:640px;}
+
+/*#region 文章展示 */
+.main_dg{width:650px;  border-bottom:1px solid #666;}
+#dataTable{width:650px;}
+#dg{width:100%;}
+#dg th{text-align:left; width:650px; height:40px; line-height:40px; font-size:20px; font-weight:bold; padding-left:10px;  border-bottom:1px solid #666;}
+#dg td{height:30px; line-height:30px; border-bottom:1px dashed #ddd;}
+#dg td a{font-weight:initial; color:#666; font-size:14px;}
+#dg td a:hover{color:rgba(255, 106, 0, 0.70);}
+#dg .leftStyle{width:500px; text-align:left; padding-left:20px;}
+#dg .rightStyle{width:150px; text-align:right; padding-right:50px;}
+
+#dgPager{width:650px;height:30px; line-height:30px; text-align:center;}
+#dgPager a{display:inline-block; color:#0094ff; margin:0 5px;}
+#dgPager a:hover{color:rgba(255, 106, 0, 0.70);}
+/*#endregion */
+
+.mainNews{width:780px; height:auto; margin:0 auto; position:relative; padding-bottom:50px;}
+.cp{font-size:14px;}
+.cp a{font-size:14px; font-weight:initial;}
+.cp a:hover{color:rgba(255, 106, 0, 0.70);}
+#dataTableByID{width:780px;}
+#dgNews{width:100%; table-layout:fixed;}
+#dgNews tr{text-align:center;}
+#dgNews th{width:100%; text-align:center; height:40px; line-height:40px; font-size:20px; font-weight:bold; padding-left:10px;  border-bottom:1px solid #666;}
+#dgNews .td_text{
+             text-align:left;
+             overflow-x:hidden;
+             overflow-y:auto;
+             white-space:normal;  
+             word-break:break-all;}
+.bottomMenu{position:absolute; right:0; bottom:0; height:20px; font-size:13px; line-height:20px;}
+.bottomMenu a{height:20px; font-size:13px; line-height:20px; display:inline-block; font-weight:initial}
+.bottomMenu a:hover{color:rgba(255, 106, 0, 0.70);}
+
+
+/*#region 热门新闻 */
+.hotMod{width:260px; height:500px; padding:5px; position:absolute;}
+.tital{display:inline-block; height:30px; line-height:30px; font-size:20px;font-weight:bold; color:#000; width:100%;
+               border-left:3px solid #0094ff; padding:0 5px;
+}
+.hotMod ul{width:245px; padding-left:10px;}
+.hotMod ul li{width:245px; height:25px; border-bottom:1px dashed #ddd; }
+.hotMod ul li span,a{font-size:17px; font-weight:bold; display:inline-block;}
+.hotMod ul li span{color:#999; cursor:default; width:30px; height:25px; line-height:25px;}
+.hotMod ul li a{color:#555; font-size:14px; font-weight:initial;}
+.hotMod ul li a:hover{color:#ff6a00;}
+
+/*定义友情链接样式*/
+.LinksMod{width:260px; height:100px; padding:5px; position:absolute;}
+#Links{
+    width: 240px;
+    height: 80px;
+    padding: 5px 5px 5px 20px;
+    text-align: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: normal;
+    word-break: break-all;
+    padding-left: 20px;
+}
+#Links a{font-weight:initial; display:inline-block; margin-bottom:3px; color:#666; border-bottom:1px dashed #666; font-size:12px;}
+#Links a:hover{color:rgb(255, 106, 0); border-color:rgb(255, 106, 0);}
+
+
+/*定义信息检索样式*/
+.InforMod{width:260px; height:145px; padding:5px; position:absolute;}
+/*#endregion */
+
+/*#endregion */
+
+
+/*#region 底部网站信息 */
+#webInfor{width:960px; height:50px; padding:20px 0 10px 0;  background-image:url(../images/bg_webinfor.png); }
+/*#endregion */

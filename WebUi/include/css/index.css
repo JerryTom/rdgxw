@@ -1,0 +1,193 @@
+﻿/*
+    定义主页样式
+    */
+
+body {position:relative; z-index:0;  font-size:12px;    font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+}
+html,body{width:100%;height:100%;}
+*{margin:0; padding:0; border:0; list-style:none;}
+a{text-decoration:none; cursor:pointer; color:#555; font-weight:initial; }
+a:hover{color:#ff6a00;}
+li a{
+    max-width:200px;
+   white-space:nowrap; word-break:keep-all; overflow:hidden; text-overflow:ellipsis; 
+}
+/*#region 顶部菜单 */
+
+/*#region 导航菜单 */
+#guide {
+        width: 100%;
+        height: 48px;
+        left: 0;
+        top: 0;
+        position:fixed;
+        z-index: 999;
+        background-color:rgba(67, 56, 50, 0.9);
+        background: url(../images/guide.png) top center repeat;
+        text-align:center;
+    }
+.guide_menu{width:980px; height:48px;display:inline-block; position:relative;
+}
+.guide_ul{height:48px; width:840px; text-align:center; margin:0 auto;}
+.guide_ul li{float:left; display:inline-block;}
+.guide_ul li a{
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0 16px;
+    text-align: left;
+    color: #666 !important;
+    float: left;
+    font-size: 15px;
+    border-right: 1px solid #ddd;}
+.guide_ul li a:hover{background-color:#eee;}
+/*#endregion */
+
+#top_menu{width:100%; height:auto; position:absolute; top:48px; left:0;}
+.menu_div{margin:0 auto; width:940px; height:80px; padding:5px 5px; position:relative;}
+/*#region 网站图片 */
+.menu_ul{width:410px; height:80px; position:absolute; left:560px; top:7px;}
+.menu_ul li{
+            display: inline-block;
+            width: auto;
+            height: 36px;
+            line-height:36px;
+            float: left;
+            position: relative;
+            margin: 0 16px 4px 0;
+            }
+.menu_ul li span{color: #666;
+                 cursor:none;
+            font-size:20px;
+            line-height:36px;
+            font-weight:bold;
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 36px;
+            overflow: hidden;}
+.menu_ul li a{
+            color: #666;
+            font-size:20px;
+            line-height:36px;
+            font-weight:bold;
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 36px;
+            overflow: hidden;}
+.menu_ul li a:hover{background-color:rgb(0, 148, 255); color:rgb(255, 255, 255);}
+/*#endregion */
+
+/*#endregion */
+
+/*#region 主体模块 */
+.mainMod{width:960px; height:auto; position:absolute; left:0; top:160px; padding:0 5px;}
+
+/*#region 滚动条 */
+#scrollobj{white-space:nowrap;overflow:hidden; height:25px; line-height:25px; width:960px; position:absolute; left:5px; top:-3px;}
+#scrollobj a{display:inline-block; padding:0 10px; font-size:13px; font-weight:initial;}
+/*#endregion */
+
+
+
+/*#region 推荐阅读 */
+#tjNews{width:360px;height:210px; position:absolute;}
+.tjTital{display:inline-block; height:30px; line-height:30px; border-radius:5px 5px 0 0; font-size:20px;font-weight:bold; color:#eee; width:80px;
+           background-color:rgb(0, 148, 255); padding:0 5px;}
+#Reading{width:335px; height:190px; padding:5px 5px 5px 20px; border:2px solid #0094ff; border-radius:0 5px 5px 5px;}
+#Reading li{height:35px; width:335px; line-height:35px; border-bottom:1px dashed #ddd;}
+#Reading li a{font-size:16px; max-width:320px;}
+/*#endregion */
+
+/*#region 热门新闻 */
+.hotMod{width:260px; height:500px; padding:5px; position:absolute;}
+.tital{display:inline-block; height:30px; line-height:30px; font-size:20px;font-weight:bold; color:#333; width:auto;
+               border-left:3px solid #0094ff; padding:0 5px;
+}
+.hotMod ul{width:245px; padding-left:10px;}
+.hotMod ul li{width:245px; height:25px; border-bottom:1px dashed #ddd; }
+.hotMod ul li span,a{font-size:17px; font-weight:bold; display:inline-block;}
+.hotMod ul li span{color:#999; cursor:default; width:30px; height:25px; line-height:25px;}
+.hotMod ul li a{ font-size:14px; font-weight:initial;}
+.hotMod ul li a:hover{color:#ff6a00;}
+/*#endregion */
+
+/*#region 新闻展示 */
+.Infor{position:absolute;
+           border-radius:5px; height:250px; width:320px;
+           padding:5px;
+}
+.inforMenu{width:310px; height:30px; line-height:30px;}
+.inforMenu li{float:left; height:30px; width:80px;
+                         border-radius:5px 5px 0 0; 
+                         margin-right:1px;
+}
+.inforMenu li a{height:30px;  display:inline-block; border-radius:5px 5px 0 0;  color:#eee; line-height:30px; width:80px; text-align:center;
+}
+
+.moverOver{  background-color:rgb(0, 148, 255); }
+.moverOut{background-color:rgb(20, 165, 39);}
+
+.inforMenu li ul{text-align:center; display:none; border:2px solid rgb(0, 148, 255);
+                            width:305px; height:213px;  position:absolute; left:5px; top:35px;
+                             border-radius:0 5px 5px 5px; padding:5px; z-index:22;
+}
+.inforMenu li ul li{width:300px; height:30px; text-align:left; padding:0 5px; line-height:30px; border-bottom:1px dashed #ddd; background-color:rgb(255, 255, 255); border-radius:0;}
+.inforMenu li ul li a{width:200px; max-width:200px; font-weight:initial; float:left; font-size:13px; color:#666; display:inline-block; height:29px; line-height:29px; text-align:left;}
+.inforMenu li ul li span{ display:inline-block;float:right; font-weight:initial;  margin-right:10px;
+                         max-width:70px;
+   white-space:nowrap; word-break:keep-all; overflow:hidden; text-overflow:ellipsis; 
+                          font-size:11px; color:#666; height:29px; line-height:29px;}
+.inforMenu li ul li a:hover{color:rgb(255, 106, 0);}
+/*#endregion */
+
+/*#region name */
+   #demo {
+     background: #FFF;
+     overflow:hidden;
+     /*border: 1px solid #999;*/
+     width: 500px;
+     padding:5px;
+     border:2px solid rgb(0, 148, 255);
+     border-radius:0 5px 5px 5px;
+    }
+    #demo img {
+     border: 3px solid #F2F2F2;
+    }
+    #indemo {
+     float: left;
+     width: 800%;
+    }
+    #demo1 {
+     float: left;
+    }
+    #demo2 {
+     float: left;
+    }     .demoTital{display:inline-block; height:30px; line-height:30px; width:95px; text-align:center; color:#000; background-color:rgb(0, 148, 255); border-radius:5px 5px 0 0;
+               font-size:20px; font-weight:bold; color:#eee;}
+/*#endregion */
+
+/*#endregion */
+
+/*#region 底部网站信息 */
+#webInfor{width:960px; height:50px; padding:20px 0 10px 0; position:absolute; background-image:url(../images/bg_webinfor.png); }
+/*#endregion */
+
+
+/*#region 友情链接 */
+.LinksMod{width:260px; height:100px; padding:5px; position:absolute;}
+#Links{
+    width: 240px;
+    height: 60px;
+    padding: 5px 5px 5px 20px;
+    text-align: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: normal;
+    word-break: break-all;
+    padding-left: 20px;
+}
+#Links a{font-weight:initial; display:inline-block; color:#666; margin-bottom:3px; border-bottom:1px dashed #666; font-size:12px;}
+#Links a:hover{color:rgb(255, 106, 0); border-color:rgb(255, 106, 0);}
+/*#endregion */

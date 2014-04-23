@@ -1,0 +1,59 @@
+﻿
+/*数据展示管理样式*/
+
+body{ margin:0; font-family:"Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体"; background-color:#ffffff; font-size:13px; text-align:center; background-image:url(../images/bg.png);}
+input,p{ margin:0; padding:0;}
+a{ text-decoration:none; color:rgb(0, 148, 255);cursor:pointer;}
+a:hover{color:#ff0000;}
+.mainDiv{ width:100%; margin-top:3em; position:relative; text-align:center;}
+.mainDiv table{ border-collapse:collapse; min-width:504px; text-align:center; position:relative; margin:0 auto; border:1px solid rgb(128, 128, 128); border-right-width:0;}
+.mainDiv table th,td{ padding:0 10px; border-right:1px solid rgb(128, 128, 128);}
+.mainDiv table tr:hover td{background-color:rgb(205, 203, 239);}
+.mainDiv table th{ height:30px; background-color:rgba(128, 128, 128, 0.50);}
+.mainDiv table td{ height:24px;}
+/*#region 顶部管理 */
+.topMod{border:1px solid rgb(128, 128, 128); border-bottom-width:0; text-align:left; margin:0 auto; height:30px; line-height:30px; padding:0 5px; width:492px;}
+.topMod a{display:inline-block; border:1px solid rgb(128, 128, 128); height:20px; line-height:20px; padding:0 5px; 
+          background-color:rgba(0, 148, 255,0.8); border-radius:5px; color:rgb(245,245,220);
+}
+.topMod a:hover{background-color:rgba(255, 106, 0, 0.77);}
+.topMod select{height:20px;}
+.topMod select option{height:20px;}
+/*#endregion */
+
+
+/*#region 分页 */
+.pagerMod{height:30px; border:2px solid rgb(172, 170, 221); width:500px; margin:5px auto;}
+.pagerMod div{width:500px; height:30px; line-height:20px; 
+              display:inline-block; position:relative;
+              
+}
+    .pagerMod div p {
+        width:130px; height:24px;padding:3px 0; display:block; text-align:center; position:absolute; left:3px; top:0px;
+    }
+.pagerMod div p  select{ padding:1px 1px; margin:0 0 0 3px; width:50px; background-color:rgb(245,245,220);border:1px solid rgba(200,200,200,0.9);}
+.pagerMod div p  select option{padding:1px 1px; text-align:center;}
+.pagerMod div #AspNetPager1{ display:block; padding:3px 0; width:500px;
+                             position:absolute; left:130px; top:0;  text-align:left;
+}
+.pagerMod div #AspNetPager1 a{
+    text-decoration:none; display:inline-block;
+    margin:0 5px; padding:1px 3px; background-color:rgb(245,245,220);
+    border:1px solid rgba(200,200,200,0.9);
+}
+.pagerMod div #AspNetPager1 a:hover{ border-color:Orange;}
+.pagerMod div #AspNetPager1 input{ margin:0 5px; padding:1px 3px; border:1px solid rgba(200,200,200,0.9);}
+.pagerMod div #AspNetPager1 #AspNetPager1_btn{ width:50px; cursor:pointer; text-align:center;}
+.pagerMod div #AspNetPager1 #AspNetPager1_input{ width:20px !important;}
+.pagerMod div #AspNetPager1 #AspNetPager1_btn:hover{border-color:Orange; background-color:rgba(100,100,100,0.3);}
+/*#endregion */
+
+/*#region 查询模块 */
+#searchMod{margin-top:2em; width:778px; text-align:center; margin:0 auto;text-align:center; border:1px solid rgb(128, 128, 128); border-bottom-width:0; padding:0 10px;}
+#searchMod h1{margin:0;padding:0;}
+#searchMod h2{width:100%; display:inline-block; background-color:rgba(128, 128, 128, 0.70);}
+p{width:100%; display:inline-block; padding:3px 0; text-align:left;}
+p select,input{border:1px solid rgba(128, 128, 128, 0.70);  background-color:rgb(245,245,220); color:#48b9ef; padding:2px 7px;}
+.search{width:50px; cursor:pointer;}
+.search:hover{background-color:#f0f0f0; color:#ff5a00;}
+/*#endregion */

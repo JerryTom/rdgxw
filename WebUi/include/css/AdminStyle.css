@@ -1,0 +1,81 @@
+﻿
+/*后台管理首页样式*/
+
+html,body {
+    width:100%; height:100%; font-family:"Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";  background-image:url(../images/bg.png);
+}
+body{
+    margin:0; font-size:13px; font-family:'Microsoft YaHei'; z-index:0; position:relative;
+}
+a{text-decoration:none; color:rgb(0, 148, 255); cursor:pointer; display:inline-block;}
+a:hover{color:rgb(255, 106, 0);}
+ul,li,iframe{
+    margin:0; padding:0; border:0;
+}
+/*#region admin管理模块 */
+.adminmenu{
+    width:100%; height:30px; position:fixed; top:0px; left:0px;
+    background-color:rgba(67, 56, 50, 0.9); z-index:999;
+}
+#admin_Manage{
+    height:30px; position:absolute; left:0px; top:0px;
+}
+    #admin_Manage li{
+        list-style:none; float:left; height:30px; border-right:1px solid rgb(0, 0, 0); position:relative;
+    }
+            #admin_Manage li a{
+            display:inline-block; height:30px; padding:0px 10px; line-height:30px;
+        }
+     /*经过时显示隐藏菜单*/
+     #admin_Manage li:hover{background-color:rgb(245,245,220);}
+     #admin_Manage li:hover .hide_menu{display:block;}
+
+/*菜单隐藏*/
+.hide_menu{width:120px; height:auto !important; background-color:rgb(245,245,220); padding:5px 0 0 0; display:none;
+           border:1px solid rgb(128, 128, 128); border-top:0; position:absolute; top:30px; left:-1px;
+}
+    .hide_menu li{width:120px; height:20px !important; border:0 !important; padding-bottom:5px;}
+    .hide_menu li a{width:120px; height:20px !important; text-align:left; line-height:20px !important;
+    }
+/*账号模块*/
+#admin_me{
+    height:30px; position:absolute; right:0px; top:0px;
+}
+    #admin_me li{
+        list-style:none; float:right; height:30px; border-left:1px solid rgb(0, 0, 0); position:relative;
+    }
+    #admin_me li:hover{ background-color:rgb(245,245,220); border:0;}
+    #admin_me li:hover #me_more{display:block;}
+        #admin_me li a{
+            display:inline-block; height:30px; padding:0px 10px; line-height:30px;
+        }
+         #admin_me #me_more{
+             position:absolute;top:30px; right:0px; width:125px; padding:5px 5px 0 5px;
+             border-left:1px solid rgb(128, 128, 128); border-bottom:1px solid rgb(128, 128, 128);
+             display:none; box-shadow:rgba(128, 128, 128,0.5) 3px 3px;
+             border-radius:0 0 0 5px;  background-color:rgb(245,245,220);
+         }
+          #admin_me #me_more li{
+              height:20px;float:left; width:125px; border:0px; text-align:center; padding-bottom:5px;
+          }
+           #admin_me #me_more li a{display:inline-block; height:20px; line-height:20px;}
+/*#endregion */
+/*#region 主体模块 */
+.mainMod{ position:absolute; left:0; top:30px; width:150px;}
+    /*#region 菜单模块 */
+    .menuMod{width:100%; height:100%; position:relative; background-color:rgba(128, 128, 128,0.5);}
+    .menu{position:absolute; top:10px; left:0px; width:140px; height:auto; padding:10px 0 0 0;}
+    .menu li{width:110px;float:left; border-top:1px solid rgb(128, 128, 128); border-bottom:1px solid rgb(128, 128, 128); height:2em; list-style:none; padding:0 0 0 40px; margin-bottom:5px; position:relative;}
+    .menu li a{display:inline-block; width:110px; height:2em; line-height:2em; text-align:left;}
+
+    .menu li:hover{background-color:rgb(245,245,220); color:rgb(255, 106, 0);}
+    .menu li:hover .menuStyle{display:block;}
+    .menuMod .menuStyle{width:120px; height:auto; position:absolute; left:150px; top:-1px; 
+                        border:1px solid rgb(128, 128, 128); display:none;
+                        border-left:0; padding-left:0; z-index:1; background-color:rgb(245,245,220);
+    }
+    .menuMod .menuStyle li{padding:0; border:0; width:120px; height:1.4em; margin-bottom:5px;}
+    .menuMod .menuStyle li a{width:110px; height:1.4em; line-height:1.4em; padding-left:10px;}
+    /*#endregion */
+
+/*#endregion */
